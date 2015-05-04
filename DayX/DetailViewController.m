@@ -10,6 +10,8 @@
 
 @interface DetailViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextView *textView;
+
 @end
 
 @implementation DetailViewController
@@ -18,6 +20,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField  {
+
+    [textField resignFirstResponder];
+    
+    return YES;
+    
+}
+
+
+- (IBAction)clearButtonTapped:(id)sender  {
+
+    self.textView.text = @"";
+    self.textField.text = @"";
+    self.title = @"";
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Q0a-oz-aIx">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Title-->
@@ -26,7 +27,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="9rX-02-WZE" kind="show" id="ehg-nj-0he"/>
+                                            <segue destination="9rX-02-WZE" kind="show" identifier="viewEntry" id="ehg-nj-0he"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -40,7 +41,7 @@
                     <navigationItem key="navigationItem" title="Title" id="YX6-Ua-Eed">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Znq-OZ-Jib">
                             <connections>
-                                <segue destination="9rX-02-WZE" kind="show" id="Jak-e1-JbP"/>
+                                <segue destination="9rX-02-WZE" kind="show" identifier="addEntry" id="Jak-e1-JbP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -50,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="1252" y="387"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Add Item Menu-->
         <scene sceneID="dwm-t3-Odq">
             <objects>
-                <viewController id="9rX-02-WZE" customClass="DetailViewController" sceneMemberID="viewController">
+                <viewController title="Add Item Menu" id="9rX-02-WZE" customClass="DetailViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LfN-8T-Vr9"/>
                         <viewControllerLayoutGuide type="bottom" id="ysU-gC-vXr"/>
@@ -61,8 +62,51 @@
                     <view key="view" contentMode="scaleToFill" id="OXu-GG-Lld">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Add item" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DgL-GL-7g6">
+                                <rect key="frame" x="16" y="64" width="568" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9rX-02-WZE" id="01B-rA-qr4"/>
+                                </connections>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZO-Dz-0Ng">
+                                <rect key="frame" x="180" y="177" width="240" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="rni-EG-ETk"/>
+                                    <constraint firstAttribute="height" constant="128" id="xZg-eG-alj"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOE-6Q-uNf">
+                                <rect key="frame" x="277" y="364" width="46" height="30"/>
+                                <state key="normal" title="Clear">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clearButtonTapped:" destination="9rX-02-WZE" eventType="touchUpInside" id="haU-tb-bXU"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BZO-Dz-0Ng" firstAttribute="centerX" secondItem="DgL-GL-7g6" secondAttribute="centerX" id="9xR-Qd-9VO"/>
+                            <constraint firstItem="DgL-GL-7g6" firstAttribute="trailing" secondItem="OXu-GG-Lld" secondAttribute="trailingMargin" id="BMn-fl-Q8E"/>
+                            <constraint firstItem="DgL-GL-7g6" firstAttribute="leading" secondItem="OXu-GG-Lld" secondAttribute="leadingMargin" id="Phu-ke-ORj"/>
+                            <constraint firstItem="BZO-Dz-0Ng" firstAttribute="top" secondItem="DgL-GL-7g6" secondAttribute="bottom" constant="83" id="RbO-Qm-DD7"/>
+                            <constraint firstItem="DgL-GL-7g6" firstAttribute="top" secondItem="LfN-8T-Vr9" secondAttribute="bottom" id="kcj-Iz-CYS"/>
+                            <constraint firstItem="LOE-6Q-uNf" firstAttribute="top" secondItem="BZO-Dz-0Ng" secondAttribute="bottom" constant="59" id="t7g-vn-0sN"/>
+                            <constraint firstItem="BZO-Dz-0Ng" firstAttribute="centerX" secondItem="LOE-6Q-uNf" secondAttribute="centerX" id="xNQ-iX-zrm"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textField" destination="DgL-GL-7g6" id="5mU-hK-1PD"/>
+                        <outlet property="textView" destination="BZO-Dz-0Ng" id="rZa-iH-ckj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xhm-eF-jqf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
