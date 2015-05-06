@@ -14,4 +14,6 @@
 @property (nonatomic, strong) NSString *bodyText;
 @property (nonatomic, strong) NSDate *timestamp;
 
+- (NSString *)description;
+
 @end

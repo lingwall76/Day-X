@@ -7,14 +7,14 @@
 //
 
 #import "ListTableViewDataSource.h"
-
+#import "EntryController.h"
 
 @implementation ListTableViewDataSource
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 5;
+    return [[EntryController sharedInstance].entries count];
     
 }
 
@@ -22,7 +22,9 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"entryCell" forIndexPath:indexPath];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"Entry %ld", (long)indexPath.row];
+    //cell.textLabel.text = [NSString stringWithFormat:@"Entry %ld", (long)indexPath.row];
+    Entry *tempEntry = [EntryController sharedInstance].entries[indexPath.row];
+    cell.textLabel.text = tempEntry.title;
     
     
     

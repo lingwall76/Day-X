@@ -29,7 +29,7 @@
 
 - (void)addEntry:(Entry *)entry
 {
-    NSMutableArray *mutableEntries = self.entries.mutableCopy;
+    NSMutableArray *mutableEntries = [[NSMutableArray alloc]initWithArray:self.entries];
     [mutableEntries addObject:entry];
     self.entries = mutableEntries;
 }
@@ -42,6 +42,17 @@
     }
     [mutableEntries removeObject:entry];
     self.entries = mutableEntries;
+}
+
+- (NSString *)description
+{
+    NSString *returnString = [NSString new];
+    NSLog(@"ec description got called");
+    for (int i=0; i<[self.entries count]; i++) {
+        NSLog(@"ec loop inside[%d]: %@", i, [NSString stringWithFormat:@"%@\n", [self.entries objectAtIndex:i]]);
+        [returnString stringByAppendingString:[NSString stringWithFormat:@"%@\n", [self.entries objectAtIndex:i]]];
+    }
+    return (NSString *)returnString;
 }
 
 @end

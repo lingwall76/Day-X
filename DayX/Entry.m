@@ -14,4 +14,9 @@
 
 @implementation Entry
 
+- (NSString *)description {
+    NSString *returnString = [NSString stringWithFormat:@"%@ %@ %@", self.title, self.bodyText, self.timestamp];
+    return returnString;
+}
+
 @end

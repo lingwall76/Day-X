@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DayX/ListTableViewDataSource.m"
-            timestampString = "452634325.951054"
+            timestampString = "452641777.330451"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "25"
@@ -26,11 +26,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "DayX/DetailViewController.m"
-            timestampString = "452637231.931511"
+            timestampString = "452640134.447412"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
             landmarkName = "-saveButtonTapped:"
             landmarkType = "5">
          </BreakpointContent>
