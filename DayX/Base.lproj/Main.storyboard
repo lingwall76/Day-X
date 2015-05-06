@@ -32,7 +32,7 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="tN6-6c-WIL" id="FW5-S7-DhC"/>
+                                    <outlet property="dataSource" destination="tN6-6c-WIL" id="VLr-mF-cVH"/>
                                 </connections>
                             </tableView>
                         </subviews>
