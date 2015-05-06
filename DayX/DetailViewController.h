@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Entry.h"
 
 @interface DetailViewController : UIViewController <UITextFieldDelegate>
 
-
-
-@property (weak, nonatomic) IBOutlet UITextField *textField;
+@property (weak, nonatomic) IBOutlet UITextField *titleTextField;
+@property (strong, nonatomic) Entry *entry;
 
 @end

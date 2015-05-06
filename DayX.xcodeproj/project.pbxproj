@@ -16,6 +16,8 @@
 		68FFDFE71AD8144B009F5D0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68FFDFE61AD8144B009F5D0A /* Images.xcassets */; };
 		68FFDFEA1AD8144B009F5D0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68FFDFE81AD8144B009F5D0A /* LaunchScreen.xib */; };
 		68FFDFF61AD8144B009F5D0A /* DayXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FFDFF51AD8144B009F5D0A /* DayXTests.m */; };
+		A5DC9DBB1AFAA8C40038DDDD /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DC9DBA1AFAA8C40038DDDD /* Entry.m */; };
+		A5DC9DBE1AFAA9140038DDDD /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DC9DBD1AFAA9140038DDDD /* EntryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		68FFDFEF1AD8144B009F5D0A /* DayXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FFDFF41AD8144B009F5D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68FFDFF51AD8144B009F5D0A /* DayXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayXTests.m; sourceTree = "<group>"; };
+		A5DC9DB91AFAA8C40038DDDD /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
+		A5DC9DBA1AFAA8C40038DDDD /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
+		A5DC9DBC1AFAA9140038DDDD /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
+		A5DC9DBD1AFAA9140038DDDD /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,10 @@
 		68FFDFD81AD8144B009F5D0A /* DayX */ = {
 			isa = PBXGroup;
 			children = (
+				A5DC9DBC1AFAA9140038DDDD /* EntryController.h */,
+				A5DC9DBD1AFAA9140038DDDD /* EntryController.m */,
+				A5DC9DB91AFAA8C40038DDDD /* Entry.h */,
+				A5DC9DBA1AFAA8C40038DDDD /* Entry.m */,
 				68FFDFDD1AD8144B009F5D0A /* AppDelegate.h */,
 				68FFDFDE1AD8144B009F5D0A /* AppDelegate.m */,
 				68FFDFE01AD8144B009F5D0A /* ListViewController.h */,
@@ -229,9 +239,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5DC9DBB1AFAA8C40038DDDD /* Entry.m in Sources */,
 				26D897991AF820A300885B9C /* DetailViewController.m in Sources */,
 				68FFDFE21AD8144B009F5D0A /* ListViewController.m in Sources */,
 				68FFDFDF1AD8144B009F5D0A /* AppDelegate.m in Sources */,
+				A5DC9DBE1AFAA9140038DDDD /* EntryController.m in Sources */,
 				26842E661AF81A7000210E75 /* ListTableViewDataSource.m in Sources */,
 				68FFDFDC1AD8144B009F5D0A /* main.m in Sources */,
 			);

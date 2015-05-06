@@ -7,14 +7,23 @@
 //
 
 #import "DetailViewController.h"
+#import "EntryController.h"
 
 @interface DetailViewController ()
 
-@property (weak, nonatomic) IBOutlet UITextView *textView;
+@property (weak, nonatomic) IBOutlet UITextView *bodyTextView;
 
 @end
 
 @implementation DetailViewController
+
+- (IBAction)saveButtonTapped:(id)sender {
+    if (self.entry) {
+        self.entry.title = self.titleTextField.text;
+        self.entry.bodyText = self.bodyTextView.text;
+        self.entry.timestamp = [NSDate date];
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -32,8 +41,8 @@
 
 - (IBAction)clearButtonTapped:(id)sender  {
 
-    self.textView.text = @"";
-    self.textField.text = @"";
+    self.titleTextField.text = @"";
+    self.bodyTextView.text = @"";
     self.title = @"";
 }
 
