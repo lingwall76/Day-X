@@ -45,8 +45,13 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:YES];
-    self.titleTextField.text = self.entry.title;
-    self.bodyTextView.text = self.entry.bodyText;
+    [self updateViewWithEntry:self.entry];
+}
+
+- (void)updateViewWithEntry:(Entry *)entry
+{
+    self.titleTextField.text = entry.title;
+    self.bodyTextView.text = entry.bodyText;
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField  {
