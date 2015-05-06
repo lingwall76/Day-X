@@ -22,7 +22,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"entryCell" forIndexPath:indexPath];
     
-    cell.textLabel.text = [NSString stringWithFormat:@"Entry %", indexPath.row];
+    cell.textLabel.text = [NSString stringWithFormat:@"Entry %ld", (long)indexPath.row];
     
     
     
