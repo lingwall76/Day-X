@@ -22,7 +22,11 @@
         self.entry.title = self.titleTextField.text;
         self.entry.bodyText = self.bodyTextView.text;
         self.entry.timestamp = [NSDate date];
-    }
+    } /*else {
+        EntryController *ec = [EntryController sharedInstance];
+        ec.addEntry(self.entry);
+    }*/
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)viewDidLoad {
