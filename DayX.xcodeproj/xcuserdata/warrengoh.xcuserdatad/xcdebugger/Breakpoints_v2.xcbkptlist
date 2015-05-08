@@ -9,29 +9,29 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DayX/ListTableViewDataSource.m"
-            timestampString = "452641777.330451"
+            filePath = "DayX/ListViewController.m"
+            timestampString = "452643551.879834"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "25"
-            endingLineNumber = "25"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "-prepareForSegue:sender:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "No"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "DayX/DetailViewController.m"
-            timestampString = "452640134.447412"
+            filePath = "DayX/EntryController.m"
+            timestampString = "452726961.091277"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
-            landmarkName = "-saveButtonTapped:"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "-saveToPersistantStorage"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

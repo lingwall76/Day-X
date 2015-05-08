@@ -3,12 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 47;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26842E661AF81A7000210E75 /* ListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 26842E651AF81A7000210E75 /* ListTableViewDataSource.m */; };
-		26D897991AF820A300885B9C /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D897981AF820A300885B9C /* DetailViewController.m */; };
 		68FFDFDC1AD8144B009F5D0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FFDFDB1AD8144B009F5D0A /* main.m */; };
 		68FFDFDF1AD8144B009F5D0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FFDFDE1AD8144B009F5D0A /* AppDelegate.m */; };
 		68FFDFE21AD8144B009F5D0A /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FFDFE11AD8144B009F5D0A /* ListViewController.m */; };
@@ -16,8 +14,10 @@
 		68FFDFE71AD8144B009F5D0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68FFDFE61AD8144B009F5D0A /* Images.xcassets */; };
 		68FFDFEA1AD8144B009F5D0A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 68FFDFE81AD8144B009F5D0A /* LaunchScreen.xib */; };
 		68FFDFF61AD8144B009F5D0A /* DayXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FFDFF51AD8144B009F5D0A /* DayXTests.m */; };
-		A5DC9DBB1AFAA8C40038DDDD /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DC9DBA1AFAA8C40038DDDD /* Entry.m */; };
-		A5DC9DBE1AFAA9140038DDDD /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5DC9DBD1AFAA9140038DDDD /* EntryController.m */; };
+		768F20211AF8894600E941EB /* ListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 768F20201AF8894600E941EB /* ListTableViewDataSource.m */; };
+		768F20241AF8955900E941EB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768F20231AF8955900E941EB /* DetailViewController.m */; };
+		768F21161AFAA3E800E941EB /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 768F21151AFAA3E800E941EB /* Entry.m */; };
+		768F21191AFAA5B500E941EB /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768F21181AFAA5B500E941EB /* EntryController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,10 +31,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		26842E641AF81A7000210E75 /* ListTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewDataSource.h; sourceTree = "<group>"; };
-		26842E651AF81A7000210E75 /* ListTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewDataSource.m; sourceTree = "<group>"; };
-		26D897971AF820A300885B9C /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		26D897981AF820A300885B9C /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		68FFDFD61AD8144B009F5D0A /* DayX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FFDFDA1AD8144B009F5D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68FFDFDB1AD8144B009F5D0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -48,10 +44,14 @@
 		68FFDFEF1AD8144B009F5D0A /* DayXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FFDFF41AD8144B009F5D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68FFDFF51AD8144B009F5D0A /* DayXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayXTests.m; sourceTree = "<group>"; };
-		A5DC9DB91AFAA8C40038DDDD /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entry.h; sourceTree = "<group>"; };
-		A5DC9DBA1AFAA8C40038DDDD /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entry.m; sourceTree = "<group>"; };
-		A5DC9DBC1AFAA9140038DDDD /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
-		A5DC9DBD1AFAA9140038DDDD /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
+		768F201F1AF8894600E941EB /* ListTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListTableViewDataSource.h; sourceTree = "<group>"; };
+		768F20201AF8894600E941EB /* ListTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewDataSource.m; sourceTree = "<group>"; };
+		768F20221AF8955900E941EB /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		768F20231AF8955900E941EB /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		768F21141AFAA3E800E941EB /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entry.h; path = ../Entry.h; sourceTree = "<group>"; };
+		768F21151AFAA3E800E941EB /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Entry.m; path = ../Entry.m; sourceTree = "<group>"; };
+		768F21171AFAA5B500E941EB /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
+		768F21181AFAA5B500E941EB /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,18 +93,18 @@
 		68FFDFD81AD8144B009F5D0A /* DayX */ = {
 			isa = PBXGroup;
 			children = (
-				A5DC9DBC1AFAA9140038DDDD /* EntryController.h */,
-				A5DC9DBD1AFAA9140038DDDD /* EntryController.m */,
-				A5DC9DB91AFAA8C40038DDDD /* Entry.h */,
-				A5DC9DBA1AFAA8C40038DDDD /* Entry.m */,
 				68FFDFDD1AD8144B009F5D0A /* AppDelegate.h */,
 				68FFDFDE1AD8144B009F5D0A /* AppDelegate.m */,
 				68FFDFE01AD8144B009F5D0A /* ListViewController.h */,
 				68FFDFE11AD8144B009F5D0A /* ListViewController.m */,
-				26842E641AF81A7000210E75 /* ListTableViewDataSource.h */,
-				26842E651AF81A7000210E75 /* ListTableViewDataSource.m */,
-				26D897971AF820A300885B9C /* DetailViewController.h */,
-				26D897981AF820A300885B9C /* DetailViewController.m */,
+				768F201F1AF8894600E941EB /* ListTableViewDataSource.h */,
+				768F20201AF8894600E941EB /* ListTableViewDataSource.m */,
+				768F20221AF8955900E941EB /* DetailViewController.h */,
+				768F20231AF8955900E941EB /* DetailViewController.m */,
+				768F21141AFAA3E800E941EB /* Entry.h */,
+				768F21151AFAA3E800E941EB /* Entry.m */,
+				768F21171AFAA5B500E941EB /* EntryController.h */,
+				768F21181AFAA5B500E941EB /* EntryController.m */,
 				68FFDFE31AD8144B009F5D0A /* Main.storyboard */,
 				68FFDFE61AD8144B009F5D0A /* Images.xcassets */,
 				68FFDFE81AD8144B009F5D0A /* LaunchScreen.xib */,
@@ -196,7 +196,7 @@
 				};
 			};
 			buildConfigurationList = 68FFDFD11AD8144B009F5D0A /* Build configuration list for PBXProject "DayX" */;
-			compatibilityVersion = "Xcode 6.3";
+			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -239,12 +239,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5DC9DBB1AFAA8C40038DDDD /* Entry.m in Sources */,
-				26D897991AF820A300885B9C /* DetailViewController.m in Sources */,
+				768F21161AFAA3E800E941EB /* Entry.m in Sources */,
+				768F20241AF8955900E941EB /* DetailViewController.m in Sources */,
 				68FFDFE21AD8144B009F5D0A /* ListViewController.m in Sources */,
 				68FFDFDF1AD8144B009F5D0A /* AppDelegate.m in Sources */,
-				A5DC9DBE1AFAA9140038DDDD /* EntryController.m in Sources */,
-				26842E661AF81A7000210E75 /* ListTableViewDataSource.m in Sources */,
+				768F21191AFAA5B500E941EB /* EntryController.m in Sources */,
+				768F20211AF8894600E941EB /* ListTableViewDataSource.m in Sources */,
 				68FFDFDC1AD8144B009F5D0A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,7 +371,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DayX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -384,7 +383,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = DayX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
