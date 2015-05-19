@@ -8,6 +8,7 @@
 
 #import "EntryController.h"
 #import "Entry.h"
+#import "Stack.h"
 
 
 @interface EntryController ()
@@ -42,7 +43,7 @@
 -(Entry *) createEntryWithtitle: (NSString *) title withBodyText:(NSString *) bodyText
 {
     
-    Entry *newEntry = [Entry new];
+    Entry *newEntry = [NSEntityDescription insertNewObjectForEntityForName:@"Entry" inManagedObjectContext:[Stack sharedInstance].managedObjectContext];
     newEntry.title  = title;
     newEntry.bodyText = bodyText;
     newEntry.timeStamp = [NSDate date];
@@ -52,18 +53,6 @@
 }
 
 
--(void)addEntry: (Entry *)entry
-{
-    if (!entry)
-    {
-        return;
-    }
-    
-    NSMutableArray *mutableEntries = self.entries.mutableCopy;
-    [mutableEntries addObject:entry];
-    
-    self.entries = mutableEntries;
-}
 
 
 -(void)removeEntry: (Entry *)entry

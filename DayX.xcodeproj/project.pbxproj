@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		26E88F971B0BA2B3008D8B66 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26E88F951B0BA2B3008D8B66 /* Model.xcdatamodeld */; };
+		26E88F9D1B0BA572008D8B66 /* Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E88F9C1B0BA572008D8B66 /* Stack.m */; };
+		26E88F9F1B0BA7D8008D8B66 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26E88F9E1B0BA7D8008D8B66 /* CoreData.framework */; };
+		26E88FA81B0BB407008D8B66 /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E88FA71B0BB407008D8B66 /* Entry.m */; };
 		68FFDFDC1AD8144B009F5D0A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FFDFDB1AD8144B009F5D0A /* main.m */; };
 		68FFDFDF1AD8144B009F5D0A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FFDFDE1AD8144B009F5D0A /* AppDelegate.m */; };
 		68FFDFE21AD8144B009F5D0A /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FFDFE11AD8144B009F5D0A /* ListViewController.m */; };
@@ -16,7 +20,6 @@
 		68FFDFF61AD8144B009F5D0A /* DayXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 68FFDFF51AD8144B009F5D0A /* DayXTests.m */; };
 		768F20211AF8894600E941EB /* ListTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 768F20201AF8894600E941EB /* ListTableViewDataSource.m */; };
 		768F20241AF8955900E941EB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768F20231AF8955900E941EB /* DetailViewController.m */; };
-		768F21161AFAA3E800E941EB /* Entry.m in Sources */ = {isa = PBXBuildFile; fileRef = 768F21151AFAA3E800E941EB /* Entry.m */; };
 		768F21191AFAA5B500E941EB /* EntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 768F21181AFAA5B500E941EB /* EntryController.m */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +34,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		26E88F961B0BA2B3008D8B66 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		26E88F9B1B0BA572008D8B66 /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
+		26E88F9C1B0BA572008D8B66 /* Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Stack.m; sourceTree = "<group>"; };
+		26E88F9E1B0BA7D8008D8B66 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		26E88FA61B0BB407008D8B66 /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entry.h; path = ../Entry.h; sourceTree = "<group>"; };
+		26E88FA71B0BB407008D8B66 /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Entry.m; path = ../Entry.m; sourceTree = "<group>"; };
 		68FFDFD61AD8144B009F5D0A /* DayX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68FFDFDA1AD8144B009F5D0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		68FFDFDB1AD8144B009F5D0A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -48,8 +57,6 @@
 		768F20201AF8894600E941EB /* ListTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListTableViewDataSource.m; sourceTree = "<group>"; };
 		768F20221AF8955900E941EB /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		768F20231AF8955900E941EB /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		768F21141AFAA3E800E941EB /* Entry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Entry.h; path = ../Entry.h; sourceTree = "<group>"; };
-		768F21151AFAA3E800E941EB /* Entry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Entry.m; path = ../Entry.m; sourceTree = "<group>"; };
 		768F21171AFAA5B500E941EB /* EntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryController.h; sourceTree = "<group>"; };
 		768F21181AFAA5B500E941EB /* EntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -59,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26E88F9F1B0BA7D8008D8B66 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +83,7 @@
 		68FFDFCD1AD8144B009F5D0A = {
 			isa = PBXGroup;
 			children = (
+				26E88F9E1B0BA7D8008D8B66 /* CoreData.framework */,
 				68FFDFD81AD8144B009F5D0A /* DayX */,
 				68FFDFF21AD8144B009F5D0A /* DayXTests */,
 				68FFDFD71AD8144B009F5D0A /* Products */,
@@ -101,10 +110,13 @@
 				768F20201AF8894600E941EB /* ListTableViewDataSource.m */,
 				768F20221AF8955900E941EB /* DetailViewController.h */,
 				768F20231AF8955900E941EB /* DetailViewController.m */,
-				768F21141AFAA3E800E941EB /* Entry.h */,
-				768F21151AFAA3E800E941EB /* Entry.m */,
 				768F21171AFAA5B500E941EB /* EntryController.h */,
 				768F21181AFAA5B500E941EB /* EntryController.m */,
+				26E88F9B1B0BA572008D8B66 /* Stack.h */,
+				26E88F9C1B0BA572008D8B66 /* Stack.m */,
+				26E88FA61B0BB407008D8B66 /* Entry.h */,
+				26E88FA71B0BB407008D8B66 /* Entry.m */,
+				26E88F951B0BA2B3008D8B66 /* Model.xcdatamodeld */,
 				68FFDFE31AD8144B009F5D0A /* Main.storyboard */,
 				68FFDFE61AD8144B009F5D0A /* Images.xcassets */,
 				68FFDFE81AD8144B009F5D0A /* LaunchScreen.xib */,
@@ -239,9 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				768F21161AFAA3E800E941EB /* Entry.m in Sources */,
+				26E88F9D1B0BA572008D8B66 /* Stack.m in Sources */,
 				768F20241AF8955900E941EB /* DetailViewController.m in Sources */,
 				68FFDFE21AD8144B009F5D0A /* ListViewController.m in Sources */,
+				26E88FA81B0BB407008D8B66 /* Entry.m in Sources */,
+				26E88F971B0BA2B3008D8B66 /* Model.xcdatamodeld in Sources */,
 				68FFDFDF1AD8144B009F5D0A /* AppDelegate.m in Sources */,
 				768F21191AFAA5B500E941EB /* EntryController.m in Sources */,
 				768F20211AF8894600E941EB /* ListTableViewDataSource.m in Sources */,
@@ -456,6 +470,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		26E88F951B0BA2B3008D8B66 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				26E88F961B0BA2B3008D8B66 /* Model.xcdatamodel */,
+			);
+			currentVersion = 26E88F961B0BA2B3008D8B66 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 68FFDFCE1AD8144B009F5D0A /* Project object */;
 }
